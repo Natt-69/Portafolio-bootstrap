@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="img/3270999.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white text-center py-3 col-12 col-sm-12 col-dm-12 col-lg-12 col-xl-12 col-xxl-12">
+        <h1>Formulario</h1>
+    </header>
+
+    <main class="container my-5 col-12 col-sm-12 col-dm-12 col-lg-12 col-xl-12 col-xxl-12">
+        <section class="border p-4 bg-light rounded shadow-sm">
+            <form class="form">
+                <fieldset class="mb-4">
+                    <legend>Datos personales</legend>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Ingrese su nombre</label>
+                        <input id="nombre" type="text" name="nombre" class="form-control" placeholder="Jose David" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Ingrese su apellido</label>
+                        <input id="apellido" type="text" class="form-control" placeholder="Sanchez" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ciudad" class="form-label">Ingrese su ciudad</label>
+                        <input id="ciudad" type="text" class="form-control" placeholder="Ciudad" required>
+                    </div>
+                </fieldset>
+                <fieldset class="mb-4">
+                    <legend>Seleccion de genero</legend>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino" required>
+                        <label class="form-check-label" for="masculino">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="femenino" value="femenino">
+                        <label class="form-check-label" for="femenino">Femenino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="nosabe" value="nosabe">
+                        <label class="form-check-label" for="nosabe">No sabe</label>
+                    </div>
+                </fieldset>
+                <fieldset class="mb-4">
+                    <legend>Seleccion de hobbies</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="deportes" value="deportes">
+                        <label class="form-check-label" for="deportes">Deportes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="artes" value="artes">
+                        <label class="form-check-label" for="artes">Artes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="tecnologia" value="tecnologia">
+                        <label class="form-check-label" for="tecnologia">Tecnologia</label>
+                    </div>
+                </fieldset>
+                <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" name="fecha" id="fecha" class="form-control" required>
+                </div>
+                <div class="mb-4">
+                    <label for="pais" class="form-label">Seleccione su pais</label>
+                    <select name="pais" id="pais" class="form-select" required>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Chile">Chile</option>
+                    </select>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5 col-12 col-sm-12 col-dm-12 col-lg-12 col-xl-12 col-xxl-12">
+        &copy; 2024 Formulario
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
